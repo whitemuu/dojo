@@ -1,8 +1,9 @@
 import Data.List
 
 main :: IO ()
-main = interact $ show . solve . map read . tail . words
+main = getLine >> getLine >>= print . solve . fmap read . words
 
 solve :: [Int] -> Int
-solve ls = max (maximum $ map length gp) (maximum $ (-1) : [length x + length y | x <- gp, y <- gp, abs (head x - head y) == 1])
-  where gp = group $ sort ls
+solve = maximum . map length . groupBy (\a b -> abs (a-b) <= 1) . sort
+
+-- credit: https://www.hackerrank.com/rest/contests/master/challenges/picking-numbers/hackers/jhrcek/download_solution
