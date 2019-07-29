@@ -1,5 +1,5 @@
 import Control.Monad
-import Data.List
+
 main :: IO ()
 main = do
   [a, b] <- replicateM 2 (getLine >>= return . map read . words :: IO [Int])
