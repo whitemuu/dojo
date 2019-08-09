@@ -57,4 +57,14 @@ public class Solution {
         }
 
     }
+
+    // java-generics
+    class Printer {
+        <T> void printArray(T[] ts) {
+            for (T t : ts) {
+                System.out.println(t);
+            }
+        }
+
+    }
 }
