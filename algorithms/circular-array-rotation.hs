@@ -6,7 +6,7 @@ main = do
   [_, k, q] <- map read . words <$> getLine
   a <- rotate k . map read . words <$> getLine
   -- let a' = listArray (0, length a - 1) a
-  -- DONE timeout, even OK without array, replicateM is EVIL
+  -- DONE timeout, even OK without array, replicateM is slow as hell
   -- void . replicateM q $ print . (a'!) =<< readLn
   mapM_ (print . (a!!) . read) . lines =<< getContents
 

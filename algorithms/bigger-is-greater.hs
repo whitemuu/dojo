@@ -1,5 +1,6 @@
 import Control.Monad
 
+-- a typical next permutation problem
 main :: IO ()
 main = do
   n <- readLn :: IO Int

@@ -7,3 +7,6 @@ main = do
 
 getInts :: IO [Int]
 getInts = map read . words <$> getLine
+
+-- solve b ks ds = foldl (\x y -> if y <= b then max x y else x) (-1) [ k + d | k <- ks, d <- ds]
+-- you can stop a for-loop on y == b, talk about suckness of functional
