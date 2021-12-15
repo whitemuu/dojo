@@ -1,0 +1,21 @@
+#+TITLE: Hacker Rank
+
+[[https://www.hackerrank.com/domains/algorithms?badge_type=problem-solving&filters%5Bstatus%5D%5B%5D=solved][Solve Algorithms | HackerRank]]
+
+* Solve Me First
+#+NAME: solve-me-first
+#+begin_src haskell
+  main :: IO ()
+  main = interact $ show . sum . map read . words
+#+end_src
+
+** Test
+all IO, no way to test..
+#+begin_src haskell :noweb no-export
+  <<solve-me-first>>
+#+end_src
+* Simple Array Sum
+
+#+INCLUDE: algorithms/simple-array-sum.hs src haskell
+* Beautiful Triplets
+[[https://www.hackerrank.com/challenges/beautiful-triplets/problem][Beautiful Triplets | HackerRank]]
