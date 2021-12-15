@@ -1,0 +1,5 @@
+* 4clojure
+- [[https://www.4clojure.com/][www.4clojure.com]] [discontinued]
+- [[https://4clojure.oxal.org/][4clojure 4ever]]
+* leetcode
+[[https://leetcode.com/problemset/all/][Problems - LeetCode]]
